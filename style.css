@@ -1,0 +1,233 @@
+
+/* General page styling */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f5f3ff;
+  color: #333;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+}
+
+/* Header */
+.site-header {
+  background-color: white;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-size: 26px;
+  font-weight: bold;
+  color: #6c4ce3;
+  text-decoration: none;
+}
+
+.logo span {
+  color: #ff8c42;
+}
+
+/* Main content */
+.container {
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 20px;
+}
+
+/* Introduction */
+.intro {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.intro h1 {
+  font-size: 32px;
+  color: #292344;
+}
+
+.eyebrow {
+  color: #6c4ce3;
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+
+/* Search form */
+#search-form {
+  display: flex;
+  gap: 10px;
+  background-color: white;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+#word-input {
+  flex: 1;
+  min-width: 0;
+  padding: 12px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  font-size: 16px;
+}
+
+#search-button {
+  background-color: #6c4ce3;
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+#search-button:hover {
+  background-color: #5134bd;
+}
+
+/* Status message */
+#status {
+  color: #666;
+  margin: 15px 0;
+}
+
+#status.error {
+  color: #c62828;
+}
+
+/* Welcome and results cards */
+.welcome-card,
+.word-card,
+.error-card {
+  background-color: white;
+  padding: 25px;
+  margin-top: 20px;
+  border-radius: 12px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
+}
+
+.welcome-card {
+  text-align: center;
+}
+
+.welcome-icon {
+  font-size: 35px;
+  color: #6c4ce3;
+  font-weight: bold;
+}
+
+.word-heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+}
+
+.word-heading h2 {
+  font-size: 30px;
+  overflow-wrap: anywhere;
+}
+
+.pronunciation {
+  color: #6c4ce3;
+}
+
+/* Audio button */
+.audio-button {
+  background-color: #6c4ce3;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.audio-button:hover {
+  background-color: #5134bd;
+}
+
+/* Definitions */
+.meaning-section {
+  border-top: 1px solid #eee;
+  margin-top: 20px;
+  padding-top: 15px;
+}
+
+.part-of-speech {
+  color: #6c4ce3;
+  font-weight: bold;
+  text-transform: capitalize;
+}
+
+.definition-item {
+  margin: 12px 0;
+}
+
+.example {
+  color: #777;
+  font-style: italic;
+}
+
+.synonyms {
+  color: #555;
+}
+
+.source-link {
+  display: inline-block;
+  margin-top: 15px;
+  color: #6c4ce3;
+}
+
+/* Footer */
+.site-footer {
+  text-align: center;
+  padding: 20px;
+  background-color: white;
+  color: #777;
+  font-size: 14px;
+}
+
+/* Hide labels visually but keep them accessible */
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+/* Mobile screens */
+@media (max-width: 500px) {
+  .site-header {
+    flex-direction: column;
+    gap: 5px;
+  }
+
+  .container {
+    margin: 20px auto;
+    padding: 12px;
+  }
+
+  .intro h1 {
+    font-size: 25px;
+  }
+
+  #search-form {
+    gap: 6px;
+  }
+
+  #search-button {
+    padding: 10px;
+  }
+
+  .word-card {
+    padding: 18px;
+  }
+
+  .word-heading {
+    align-items: flex-start;
+  }
+}
